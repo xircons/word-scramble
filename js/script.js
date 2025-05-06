@@ -37,6 +37,7 @@ const words = [
       } else {
         clearInterval(timer);
         showMessage(`หมดเวลาละน้องเอ้ย`);
+        correctAnswers = 0;
         startGame();
       }
     }, 1000);
@@ -56,7 +57,7 @@ const words = [
   };
   
   const startGame = () => {
-    startTimer(30);
+    startTimer(15);
     
     const randomObj = words[Math.floor(Math.random() * words.length)];
     correctWord = randomObj.word.toLowerCase();
