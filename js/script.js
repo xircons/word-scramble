@@ -1,3 +1,5 @@
+console.log('%c danger! "นั่นแหนะ ไม่มีอะไรให้ดูหรอกโค้ดพี่ง่ายๆ"', 'color: red; font-weight: bold;');
+
 const words = [
     { word: atob("amF2YXNjcmlwdA=="), hint: "A language used to make websites interactive." },
     { word: atob("aHRtbA=="), hint: "The code that builds the structure of a website." },
