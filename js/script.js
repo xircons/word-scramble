@@ -142,7 +142,7 @@ const checkAnswer = () => {
       startGame();
     }
   } else {
-    showToast(`ผิด! "${userWord}" ไม่ใช่คำตอบที่ถูกต้อง`);
+    showToast(`ผิดนะน้อง "${userWord}" ยังไม่ถูก`);
     correctAnswers = 0;
     updateProgress();
   }
