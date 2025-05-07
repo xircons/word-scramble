@@ -3,9 +3,9 @@
 <head>
   <meta charset="utf-8">
   <title>— Find hidden word</title>
-  <link rel="icon" type="image/x-icon" href="icon.png">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/x-icon" href="icon.png">
 </head>
 <body>
   <div class="container">
@@ -13,19 +13,24 @@
       <h1>Word Scramble</h1>
     </header>
     <div class="content">
+      <div class="counter"><span class="solved-count">0</span>/10</div>
+      <div class="progress-bar">
+        <div class="progress-fill"></div>
+      </div>
       <div class="scrambled-word"></div>
       <div class="info">
         <div class="hint">Hint: <span></span></div>
-        <div class="timer"><span>30</span>s</div>
+        <div class="timer"><span>15</span>s</div>
       </div>
-      <input type="text" spellcheck="false" placeholder="Enter the correct word">
+      <input type="text" spellcheck="false" placeholder="Enter the correct word" autocomplete="off">
       <div class="buttons">
         <button class="refresh-btn">New Word</button>
         <button class="check-btn">Submit</button>
       </div>
     </div>
   </div>
-
+  
+  <div class="toast"></div>
   <script src="js/script.js"></script>
 </body>
 </html>
